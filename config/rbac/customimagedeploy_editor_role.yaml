@@ -1,0 +1,24 @@
+# permissions for end users to edit customimagedeploys.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: customimagedeploy-editor-role
+rules:
+- apiGroups:
+  - customimagedeploy.example.com
+  resources:
+  - customimagedeploys
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - customimagedeploy.example.com
+  resources:
+  - customimagedeploys/status
+  verbs:
+  - get

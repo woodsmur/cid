@@ -1,0 +1,9 @@
+apiVersion: customimagedeploy.example.com/v1
+kind: CustomImageDeploy
+metadata:
+  name: customimagedeploy-sample
+spec:
+  # Add fields here
+  size: 2
+  port: 80
+  image: nginx:1.17

@@ -1,0 +1,7 @@
+domain: example.com
+repo: example.com/custom-image-deploy
+resources:
+- group: customimagedeploy
+  kind: CustomImageDeploy
+  version: v1
+version: "2"
